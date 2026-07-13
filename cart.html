@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/aaaf80a071.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>This is cart page</h1>
+    <!--This is header section-->
+    <header>
+        <nav>
+            <img src="images/logo.jpeg" alt="logo" width="150px">
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="bite deals.html">Bite Deals</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--end of header section-->
+
+     <section class="cart">
+
+        <h2 style="text-align: center; margin: 20px 20px 20px ;">Your Cart</h2>
+        <table>
+            <thead>
+                <th>item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </thead>
+
+            <tbody>
+                <!--each row have 5 td tags -->
+
+                <!--1st row Start-->
+                <tr>
+                    <!--1 td-->
+                    <td class="item">
+                        <img src="images/menu/coldcoffee.png">
+                        <div>
+                            <h4>🥤 Cold Coffee</h4>
+                            <p>Chilled creamy cold coffee blended with fresh milk, coffee,
+                    ice cream, and chocolate syrup for a smooth and refreshing drink.</p>
+                        </div>
+                    </td>
+                    <!--2 td-->
+                    <td>₹120</td>
+                    <!--3 td-->
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <!--4 td-->
+                    <td>₹120</td>
+                    <!--5 td-->
+                    <td><button class="remove">❌</button></td>
+                </tr>
+               <!--1st row End -->
+
+               <!--2nd Row Start-->  
+                <tr>
+                    <!--1 td-->
+                    <td class="item">
+                        <img src="images/menu/meal1.jpg">
+                        <div>
+                            <h4>🍔 Burger Bliss Combo</h4>
+                            <p>Enjoy the perfect fast-food combo featuring a juicy burger, crispy golden
+                    fries, and a refreshing chilled Coke for a complete and satisfying meal.</p>
+                        </div>
+                    </td>
+                    <!--2 td-->
+                    <td>₹249</td>
+                    <!--3 td-->
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <!--4 td-->
+                    <td>₹249</td>
+                    <!--5 td-->
+                    <td><button class="remove">❌</button></td>
+                </tr>
+                <!--2nd row End -->
+
+                <!--3rd row Start-->
+                <tr>
+                    <!--1 td-->
+                    <td class="item">
+                        <img src="images/menu/burger-card1.png">
+                        <div>
+                            <h4>🍔 Classic Burger</h4>
+                            <p>A juicy grilled burger layered with fresh lettuce, tomatoes, onions,
+                    creamy sauce, and a soft toasted bun for the perfect bite.</p>
+                        </div>
+                    </td>
+                    <!--2 td-->
+                    <td>₹149</td>
+                    <!--3 td-->
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <!--4 td-->
+                    <td>₹149</td>
+                    <!--5 td-->
+                    <td><button class="remove">❌</button></td>
+                </tr>
+                <!--3rd row End-->
+                <!--4th row Start-->
+                <tr class="grand-total">
+                    <td colspan="3">Grand Total</td>
+                    <td>₹518</td>
+                    <td><button>Proceed</button></td>
+                </tr>
+                <!--4th row End -->
+            </tbody>
+        </table>
+    </section>
 </body>
+
 </html>
