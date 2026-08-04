@@ -14,7 +14,7 @@
     <!--This is header section-->
     <header>
         <nav>
-             <a href="index.html"><img src="images/logo.jpeg" alt="logo" width="150px"></a>
+            <a href="index.html"><img src="images/logo.jpeg" alt="logo" width="150px"></a>
             <ul>
                 <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -31,16 +31,23 @@
         <div class="auth-box">
             <h2>Login to Bite<span>Box</span></h2>
             <form>
-                <input type="email" placeholder="Enter Email" required>
-                <input type="password" placeholder="Enter Password" required>
-
-                <button type="submit">Login</button>
-                <p><a href="signup.html">Forget Password</a></p>
-                <p>Dont have an account? <a href="signup.html">SignUp</a></p>
+                <input type="email" placeholder="Enter Email" id="email" required>
+                <div style="position:relative;">
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    <span onclick="togglePassword()"
+                        style="position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor: pointer;">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+                <button type="submit" onclick="login()"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+                <p id="error" style="color:red;"></p>
+                <p><a href="signup.html"><i class="fa-solid fa-key"></i> Forget Password</a></p>
+                <p>Dont have an account? <a href="signup.html"><i class="fa-solid fa-user-plus"></i> SignUp</a></p>
             </form>
         </div>
     </section>
-   <!--End of authentication section-->
+    <!--End of authentication section-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
